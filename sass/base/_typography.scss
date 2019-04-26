@@ -1,0 +1,16 @@
+.heading--primary{
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 0;
+    text-transform: capitalize;
+    letter-spacing: .5rem;
+}
+
+.content{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}   
+

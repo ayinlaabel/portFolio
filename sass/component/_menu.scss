@@ -1,0 +1,69 @@
+.menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: .9;
+    visibility: hidden;
+
+
+    &.show{
+        visibility: visible;
+    }
+
+    &--branding, 
+    &--nav{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    &--btn{
+        position: absolute;
+        z-index: 3;
+        top: 3.5rem;
+        right: 3.5rem;
+        cursor: pointer;
+        transition: all .3s;
+
+        &__line{
+            width: 2.8rem;
+            height: 3px;
+            margin: 0 0 .5rem 0;
+            background-color: $color-white;
+            transition: all .3s;
+        }
+
+        &.close{
+
+            transform: rotate(180deg);
+
+            .menu--btn__line{
+
+                //Line 1 Rotate 45dge
+                &:nth-child(1){
+                    transform: rotate(45deg) translate(.5rem, .5rem);
+                }
+
+                //Line 2 Hidden
+                &:nth-child(2){
+                 opacity: 0;   
+                }
+
+                //Line 3 Rotate -45deg
+                &:nth-child(3){
+                    transform: rotate(-45deg) translate(.5rem, -.4rem);
+                }
+            }
+        }
+    }
+
+    &--nav{
+        margin: 0;
+        padding: 0;
+        background-color: darken($color: #000000, $amount: );
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Krane Abel",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

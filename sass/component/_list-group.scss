@@ -1,0 +1,11 @@
+.list-group{
+    list-style: none;
+    color: $color-primary;
+
+    &-item{
+        // padding-right: 23rem;
+        display: inline;
+        letter-spacing: 2px;
+        padding: .5rem;
+    }
+}
