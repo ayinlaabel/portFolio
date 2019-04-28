@@ -6,10 +6,17 @@
 @import 'base/typography';
 @import 'base/utility';
 
+@import 'component/about';
 @import 'component/bg-video';
+@import 'component/button';
+@import 'component/contact';
 @import 'component/list-group';
 @import 'component/menu';
+@import 'component/project';
+
 
 @import 'page/home';
 
 // @import '';
+
+@import 'layout/mobile';

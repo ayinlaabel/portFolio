@@ -1,0 +1,41 @@
+.project{
+    background-color: $color-black;
+    margin: -19px 0;
+    padding: 2rem;
+
+    &--item{
+        width: 23%;
+        float: left;
+        margin: .3rem;
+        border-radius: 3px;
+        border: 3px solid $color-primary;
+        padding: .3rem;
+
+        &__img{
+            height: 100%;
+            width: 100%;
+        }
+
+        &__btn{
+            width: 100%;
+            text-align: center;
+
+            &-1{
+                display: block;
+                background-color: dodgerblue;
+                width: 80%;
+                padding: .5rem;
+                margin: 1.2rem;
+            }
+
+            &-2{
+                display: block;
+                background-color: $color-black;
+                width: 80%;
+                padding: .5rem;
+                margin: 1.2rem;
+            }
+        }
+
+    }
+}

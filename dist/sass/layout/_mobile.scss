@@ -1,0 +1,70 @@
+//Wide Screens
+@include mediaXl{
+    .project{
+        &--item{
+            float: left;
+            width: 22.7%;
+        }
+    }
+}
+//Desktops & Laptops
+@include mediaLg{
+    .project{
+        &--item{
+            float: left;
+            width: 30.9%;
+        }
+    }
+}
+//Tablets & Small Laptops
+@include mediaMd{
+    main{
+        text-align: center;
+        align-items: center;
+    }
+    .menu{
+
+        &--branding, 
+        &--nav{
+            float: none;
+            width: 100%;
+            min-height: 0;
+        }
+
+        &--branding{
+            height: 0;
+        }
+        
+    }
+    .about{
+        &--section{
+            
+            &__shape{
+                align-content: center;
+                float: none;
+                width: 12rem;
+                height: 12rem;
+        
+            }
+        
+            &__img{height: 100%; width: 100%;}
+        }
+        
+    }
+    .project{
+        &--item{
+            float: left;
+            width: 46%;
+        }
+    }
+
+}
+//Smartphones
+@include mediaSm{
+    .project{
+        &--item{
+            float: none;
+            width: 100%;
+        }
+    }
+}

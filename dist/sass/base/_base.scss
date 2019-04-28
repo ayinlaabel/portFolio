@@ -1,3 +1,9 @@
+a{
+    text-decoration: none;
+    color: $color-white;
+    
+}
+
 html,
 body{
     font-family: 'Lato';
@@ -5,4 +11,8 @@ body{
     margin: 0;
     position: relative;
     height: 99vh;
+}
+
+.heading{
+    text-align: center;
 }

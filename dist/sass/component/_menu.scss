@@ -3,6 +3,7 @@
     top: 0;
     width: 100%;
     opacity: .9;
+    z-index: 2;
     visibility: hidden;
 
 
@@ -22,7 +23,7 @@
         overflow: hidden;
     }
     &--btn{
-        position: absolute;
+        position: fixed;
         z-index: 3;
         top: 3.5rem;
         right: 3.5rem;
@@ -30,7 +31,7 @@
         transition: all .3s;
 
         &__line{
-            width: 2.8rem;
+            width: 2.3rem;
             height: 3px;
             margin: 0 0 .5rem 0;
             background-color: $color-white;
@@ -62,8 +63,49 @@
     }
 
     &--nav{
+        z-index: 4;
         margin: 0;
         padding: 0;
-        background-color: darken($color: #000000, $amount:5 );
+        background-color: darken($color-black, 1);
+        transform: translate3d(100%, 0, 0);
+        transition: all .3s;
+
+        &.show{
+            transform: translate3d(0, 0, 0);
+        }
+
+        &__item{
+            transform: translate3d(0,-100rem, 0);
+            transition: all .5s;
+
+            &.show{
+            transform: translate3d(0, 0, 0);
+            }
+
+            &.current > a{
+                color: $color-white;
+            }
+
+        }
+
+        &__link{
+            display: inline-block;
+            position: relative;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            padding: 2rem 0;
+            font-weight: 400;
+            color: $color-primary;
+            text-decoration: none;
+        }
+    }
+
+
+}
+
+
+@for $x from 1 through 5 {
+    .menu--nav__item:nth-child(#{$x}){
+        transition-delay: $x * .3s;
     }
 }

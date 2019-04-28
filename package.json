@@ -4,7 +4,7 @@
   "description": "My Portfolio",
   "main": "app.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass dist/sass/main.scss dist/css/style.css -w"
   },
   "author": "Krane Abel",
   "license": "ISC",

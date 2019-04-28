@@ -1,0 +1,58 @@
+.about{
+    margin: 3rem 1rem;
+    // background-color: rgba($color-black, .5);
+
+    &--heading{
+        text-align: center;
+        font-weight: 500;
+        &__secondary{
+            font-size: 4rem;
+            font-weight: 600;
+        }
+    }
+    &--section{
+        margin: 1rem auto;
+        background-color: rgba($color-white, 0.7);
+        width: 75%;
+        box-shadow: 1rem 1rem 1rem rgba($color-black,0.3);
+        border-radius: 3px;
+        padding: 2rem;
+        transform: skewX(-12deg);
+        clear: both;
+
+        &__shape{
+            border-radius: 50%;
+            width: 12rem;
+            height: 12rem;
+            float: left;
+            border: 3px solid $color-primary;
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            transform: skewX(12deg);
+        }
+
+        &__content{
+            transform: skewX(12deg);
+
+        }
+
+        &__img{height: 100%; 
+            width: 100%;
+            border-radius: 50%;
+        }
+
+
+    }
+}
+
+.bg-img{
+    background-image: url(../img/net-2.jpg);
+    background-size: cover;
+    // height: 100vh;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,9 +1,10 @@
 .heading--primary{
-    font-size: 6rem;
+    font-size: 9rem;
     font-weight: 900;
     margin: 0;
     text-transform: capitalize;
     letter-spacing: .5rem;
+    color: $color-white;
 }
 
 .content{
@@ -12,5 +13,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-}   
+}
+
+.primary-color{
+    color: $color-primary;
+}
+
+.heading--secondary{
+    font-size: 4rem;
+    font-weight: 300;
+    color: $color-white;
+}
+
+
 
