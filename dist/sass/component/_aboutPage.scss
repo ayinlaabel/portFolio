@@ -1,0 +1,50 @@
+.section{
+    padding: 2rem;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-areas: 
+    'img bio bio'
+    'job-1 job-2 job-3';
+    grid-template-columns: 1fr;
+}
+.bio{
+    grid-area: bio;
+}
+
+.job{
+    margin: 0 auto;
+    background-color: lighten($color-black, 10);
+    padding: 0 .5rem;
+    border-bottom: $color-primary 3px solid;
+
+    &-h3{
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &-h6{
+        font-size: 1rem;
+        margin: 0 auto;
+        text-align: right;
+        padding-bottom: 2rem;
+    }
+
+    &-1{
+        grid-area: job-1;
+    }
+    &-2{
+        grid-area: job-2;
+    }
+    &-3{
+        grid-area: job-3;
+    }
+}
+
+.img{
+    grid: img;
+    margin: 0 5rem;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    border: .5rem solid $color-primary;
+}

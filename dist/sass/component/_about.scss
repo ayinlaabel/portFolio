@@ -48,7 +48,7 @@
 }
 
 .bg-img{
-    background-image: url(../img/net-2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)) ,url(../img/net-2.jpg);
     background-size: cover;
     // height: 100vh;
     background-attachment: fixed;

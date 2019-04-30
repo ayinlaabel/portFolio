@@ -10,9 +10,23 @@ body{
     font-size: 16px;
     margin: 0;
     position: relative;
-    height: 99vh;
+    height: 100vh;
 }
 
 .heading{
     text-align: center;
+}
+
+main{
+    min-height: calc(100vh -1.5rem);
+}
+
+.footer{
+    &--container{
+        text-align: center;
+        height: 1.5rem;
+        background-color: lighten($color-black, 10);
+        padding: 1rem;
+        color: $color-white;
+    }
 }

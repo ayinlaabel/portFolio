@@ -1,0 +1,12 @@
+.bg{
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba($color-black, .9), rgba($color-black, .9)) , url(../img/net-4.jpg);
+    // margin: -3rem 0 0 0;
+    padding: 1rem;
+    color: $color-white;
+
+    &-primary{
+        border-bottom:2px solid $color-primary;
+        padding: .5rem;
+    }
+}
