@@ -7,8 +7,23 @@ const multer = require('multer');
 const flash = require('connect-flash');
 const session = require('express-session');
 
+//DB Connection
+mongoose.connect('mongodb://localhost/profile');
+
+const db = mongoose.connection;
+
+//Check DB Connection
+db.on('open', () => console.log('Connected to Mongodb on Port 27017 Successfully...'));
+
+//Check DB Connection Error
+db.once('error', () => console.log(err));
+
 //Init appjs
 const app = express();
+
+//BodyParser Middleware
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 //set public folder as static folder
 app.use(express.static(path.join(__dirname, 'public')));

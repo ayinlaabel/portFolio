@@ -34,3 +34,4 @@ function toggleMenu (){
         showMenu = false;
     }
 }
+

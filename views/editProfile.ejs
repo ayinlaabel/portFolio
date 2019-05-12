@@ -35,40 +35,81 @@
                 <h2 class="heading--secondary about--heading__secondary"><span class="primary-color">Edit</span> Profile</h2>
             </div>
             <div class="sections">
-                <form action="" method="post" class="form">
-                    <div class="file-field input-field">
+                <form action="/portfolio/editAboutPage" method="post" class="form">
+                    
+                    <div class="row">
+                        <div class="file-field input-field col s12 m6">
                             <div class="btn yellow darken-2">
                                 <span>File</span>
                                 <input type="file">
                             </div>
                             <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text">
+                                <input class="file-path validate white-text" type="text" placeholder="Upload your Profile Picture">
                             </div>
                         </div>
+                    </div>
+                    
                         <div class="bio1">
-                            <h3 class="heading--tertiary bg-primary block u-margin-bottom">Bio</h2>
+                            <h4 class="heading bg-primary block u-margin-bottom">Bio</h4>
                                     <div class="input-field">
-                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <textarea id="textarea1" class="materialize-textarea white-text" name="bio"></textarea>
                                         <label for="textarea1">Bio</label>
                                     </div>
                         </div>
-                        <div class=" jobs1">
-                            <h3 class="heading--tertiary bg-primary block">
-                                Add Programming Experience
-                            </h3>
-                            <div class="input-field">
-                                <input id="title" type="text" class="validate">
-                                <label for="title">Job Title</label>
-                            </div>
-                            <div class="input-field">
-                                <input id="jd" type="text" class="validate">
-                                <label for="jd">Job Description</label>
-                            </div>
-                                <div class="input-field">
-                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                    <label for="textarea1">About Experience</label>
+                        <div class="row">
+                            <div class=" job1 col s4">
+                                <h4 class="heading bg-primary block u-margin-bottom">
+                                    Add Programming Experience
+                                </h4>
+                                <div class="input-field u-margin-bottom">
+                                    <input id="title" type="text" class="validate white-text" name="title1">
+                                    <label for="title white-text">Job Title</label>
                                 </div>
+                                <div class="input-field u-margin-bottom">
+                                    <input id="jd" type="text" class="validate white-text" name="desc1">
+                                    <label for="jd">Job Description</label>
+                                </div>
+                                    <div class="input-field u-margin-bottom">
+                                        <textarea id="textarea" class="materialize-textarea white-text" data-lenght="220" name="prog1"></textarea>
+                                        <label for="textarea">About Experience</label>
+                                    </div>
+                            </div>
+                            <div class=" job2 col s4">
+                                <h4 class="heading bg-primary block u-margin-bottom">
+                                    Add Programming Experience
+                                </h4>
+                                <div class="input-field u-margin-bottom">
+                                    <input id="title" type="text" class="validate white-text" name="title2">
+                                    <label for="title white-text">Job Title</label>
+                                </div>
+                                <div class="input-field u-margin-bottom">
+                                    <input id="jd" type="text" class="validate white-text" name="desc2">
+                                    <label for="jd">Job Description</label>
+                                </div>
+                                    <div class="input-field u-margin-bottom">
+                                        <textarea id="textarea" class="materialize-textarea white-text" data-lenght="220" name="prog2"></textarea>
+                                        <label for="textarea">About Experience</label>
+                                    </div>
+                            </div>
+                            <div class="job3 col s4">
+                                <h4 class="heading bg-primary block u-margin-bottom">
+                                    Add Programming Experience
+                                </h4>
+                                <div class="input-field u-margin-bottom">
+                                    <input id="title" type="text" class="validate white-text" name="title3">
+                                    <label for="title white-text">Job Title</label>
+                                </div>
+                                <div class="input-field u-margin-bottom">
+                                    <input id="jd" type="text" class="validate white-text" name="desc3">
+                                    <label for="jd">Job Description</label>
+                                </div>
+                                    <div class="input-field u-margin-bottom">
+                                        <textarea id="textarea" class="materialize-textarea white-text" data-lenght="220" name="prog3"></textarea>
+                                        <label for="textarea">About Experience</label>
+                                    </div>
+                            </div>
                         </div>
+                        
                         <button class="btn waves-effect waves-light yellow darken-2" type="submit" name="action">Submit
                             <i class="material-icons right">send</i>
                         </button>
