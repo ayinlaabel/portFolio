@@ -103,7 +103,6 @@
 
 }
 
-
 @for $x from 1 through 5 {
     .menu--nav__item:nth-child(#{$x}){
         transition-delay: $x * .3s;

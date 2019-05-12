@@ -8,7 +8,8 @@ body {
   font-size: 16px;
   margin: 0;
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  background-color: none; }
 
 .heading {
   text-align: center; }
@@ -51,6 +52,13 @@ li {
   text-decoration: none;
   display: inline; }
 
+.form {
+  margin: 2rem 13rem; }
+
+nav {
+  background-color: none;
+  color: none; }
+
 .u-center-text {
   text-align: center; }
 
@@ -58,8 +66,15 @@ li {
   align-items: flex-end;
   justify-items: end; }
 
+.block {
+  display: inline-block; }
+
+.u-margin-bottom {
+  margin-bottom: 1rem; }
+
 .about {
-  margin: 3rem 1rem; }
+  margin: 3rem 1rem;
+  height: 100vh; }
   .about--heading {
     text-align: center;
     font-weight: 500; }
@@ -132,7 +147,9 @@ li {
     grid-area: job-3; }
 
 .img {
-  grid: img;
+  grid: img; }
+
+.image {
   margin: 0 5rem;
   height: 15rem;
   width: 15rem;
